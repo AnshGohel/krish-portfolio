@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makwana Krrish | Electrical Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Makwana Krrish - Electrical Engineer from GEC Rajkot specializing in CNC Operations, Renewable Energy, Solar Tech, and EV Systems.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Circuit Canvas & Grid -->
+  <canvas id="circuit-canvas"></canvas>
+  <div class="ambient-grid"></div>
+
+  <div class="content-wrapper">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#hero" class="nav-brand">
+          <div class="brand-icon">⚡</div>
+          <span>Krrish<span style="color: var(--accent-cyan);">.Eng</span></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#academics" class="nav-link">Academics</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#interests" class="nav-link">Interests</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Theme">
+            <!-- Injected by script.js -->
+          </button>
+          <a href="resume.html" target="_blank" class="btn btn-outline-cyan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Print Resume
+          </a>
+          <a href="Makwana_Krrish_Resume.pdf" download="Makwana_Krrish_Resume.pdf" class="btn btn-primary" style="padding: 0.65rem 1rem; font-size: 0.85rem;">
+            📥 Download PDF
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for Engineering Roles & Projects
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="text-gradient">Makwana Krrish</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>⚡ Electrical Engineer</span>
+            <span style="color: var(--text-muted);">|</span>
+            <span style="color: var(--accent-emerald);">Renewable & EV Tech</span>
+          </div>
+
+          <p class="hero-desc">
+            Motivated Electrical Engineering student from <strong>Government Engineering College Rajkot (GTU)</strong> with hands-on industrial internship experience in CNC manufacturing. Driven by a passion for solar & renewable power, EV innovations, and high-precision automation.
+          </p>
+
+          <div class="hero-cta">
+            <a href="Makwana_Krrish_Resume.pdf" download="Makwana_Krrish_Resume.pdf" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download PDF Resume
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-outline-cyan">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              Print / Save PDF (Web)
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get In Touch
+            </a>
+          </div>
+
+          <div class="hero-meta-list">
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Wankaner, Morbi, Gujarat, India</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+919409000682" style="color: inherit; text-decoration: none;">+91 9409000682</a>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>English, Hindi, Gujarati</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Engineering Terminal Card -->
+        <div class="circuit-card">
+          <div class="card-header-bar">
+            <div class="window-dots">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">engineer_profile.sys</span>
+            <span style="font-size: 0.75rem; color: var(--accent-cyan); font-family: var(--font-mono);">ONLINE</span>
+          </div>
+          <div class="circuit-card-body">
+            <div class="spec-list">
+              <div class="spec-row">
+                <span class="spec-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Full Name
+                </span>
+                <span class="spec-val">Makwana Krrish</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  Discipline
+                </span>
+                <span class="spec-val" style="color: var(--accent-cyan);">Electrical Engineering</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                  Institution
+                </span>
+                <span class="spec-val">GEC Rajkot {GTU}</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  Industrial Role
+                </span>
+                <span class="spec-val" style="color: var(--accent-amber);">CNC Machine Ops Intern</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                  </svg>
+                  Primary Focus
+                </span>
+                <span class="spec-val" style="color: var(--accent-emerald);">Solar, EV & Power Grid</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600;">Core Competency Tags</span>
+              <div class="tag-cloud">
+                <span class="spec-badge">Power Systems</span>
+                <span class="spec-badge">Switchgear & Protection</span>
+                <span class="spec-badge">Electrical Machines</span>
+                <span class="spec-badge">AC Machine Design</span>
+                <span class="spec-badge">Power Electronics</span>
+                <span class="spec-badge">CNC Operations</span>
+                <span class="spec-badge">Video & Graphics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Metrics Section -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon">⚡</div>
+            <div class="metric-number">B.E.</div>
+            <div class="metric-label">Electrical Engineering (GEC Rajkot)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">⚙️</div>
+            <div class="metric-number">CNC</div>
+            <div class="metric-label">Machine Setup & Operations Experience</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">☀️</div>
+            <div class="metric-number">EV & Solar</div>
+            <div class="metric-label">Renewable Clean Energy Focus</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon">🌐</div>
+            <div class="metric-number">3</div>
+            <div class="metric-label">Languages (English, Hindi, Gujarati)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Profile Summary Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 01. Profile Overview</span>
+          <h2 class="section-title">Engineered for Excellence</h2>
+          <p class="section-desc">Bridging foundational electrical theory with practical manufacturing and clean energy innovation.</p>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.5rem; position: relative;">
+          <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2.5rem; align-items: center;">
+            <div>
+              <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--accent-cyan);">Professional Profile Summary</h3>
+              <p style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                "Motivated Electrical Engineering student with internship experience in a CNC company. Interested in <strong>solar energy, renewable energy, and electric vehicle technologies</strong>. Possesses strong technical, problem-solving, and teamwork skills. Fluent in <strong>Hindi, English, and Gujarati</strong>, with a willingness to learn and grow in the engineering field."
+              </p>
+              <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-emerald); font-weight: 600; font-size: 0.9rem;">
+                  <span>✓</span> Industrial Safety Trained
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-cyan); font-weight: 600; font-size: 0.9rem;">
+                  <span>✓</span> Problem Solving & Troubleshooting
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--accent-amber); font-weight: 600; font-size: 0.9rem;">
+                  <span>✓</span> Digital & Creative Media Design
+                </div>
+              </div>
+            </div>
+
+            <div style="background: rgba(0, 0, 0, 0.2); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.75rem;">
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">Core Engineering Mindset</h4>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.9rem; color: var(--text-secondary);">
+                <li style="display: flex; gap: 0.6rem;">
+                  <span style="color: var(--accent-cyan);">▶</span>
+                  <span><strong>Hands-On Execution:</strong> Practical shop-floor exposure over purely theoretical knowledge.</span>
+                </li>
+                <li style="display: flex; gap: 0.6rem;">
+                  <span style="color: var(--accent-cyan);">▶</span>
+                  <span><strong>Renewable Transition:</strong> Eager to contribute to India's electric mobility and solar grid expansion.</span>
+                </li>
+                <li style="display: flex; gap: 0.6rem;">
+                  <span style="color: var(--accent-cyan);">▶</span>
+                  <span><strong>Versatility:</strong> Engineering discipline blended with digital design & video editing acumen.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" style="background: rgba(0, 0, 0, 0.15);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 02. Work History</span>
+          <h2 class="section-title">Industrial Experience</h2>
+          <p class="section-desc">Practical manufacturing exposure and machinery operation under real shop-floor standards.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-bullet"></div>
+            <div class="experience-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Electrical Engineering Intern</h3>
+                  <div class="exp-company">CNC Manufacturing Company</div>
+                </div>
+                <span class="exp-badge">Practical Industrial Exposure</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li>Gained hands-on experience in <strong>CNC machine operations</strong> and manufacturing processes.</li>
+                <li>Assisted in <strong>machine setup, operation, and routine maintenance activities</strong>.</li>
+                <li>Learned and adhered to strict <strong>industrial safety standards and workplace procedures</strong>.</li>
+                <li>Observed <strong>production planning and quality control</strong> processes to meet stringent tolerances.</li>
+                <li>Supported <strong>troubleshooting and basic technical tasks</strong> within the production environment.</li>
+                <li>Developed practical <strong>problem-solving and analytical skills</strong> through daily shop-floor engagement.</li>
+                <li>Worked effectively with seasoned technicians and cross-functional team members to achieve production targets.</li>
+              </ul>
+
+              <div class="exp-highlights-grid">
+                <div class="exp-highlight-item">
+                  <strong>Machine Setup & Ops</strong>
+                  <span>CNC precision tooling & routine maintenance procedures</span>
+                </div>
+                <div class="exp-highlight-item">
+                  <strong>Safety Compliance</strong>
+                  <span>Adherence to industrial factory safety guidelines</span>
+                </div>
+                <div class="exp-highlight-item">
+                  <strong>Quality & Targets</strong>
+                  <span>Coordinating with technicians to fulfill production schedules</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Relevant Subjects Section -->
+    <section id="academics" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 03. Academic Foundations</span>
+          <h2 class="section-title">Education & Coursework</h2>
+          <p class="section-desc">Rigorous curriculum covering electrical power transmission, machinery design, and modern electronics.</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degree Card -->
+          <div class="edu-main-card">
+            <div>
+              <span class="edu-badge">GTU Affiliated Engineering Degree</span>
+              <h3 class="edu-degree">Bachelor of Engineering (B.E.)</h3>
+              <div class="edu-college">Electrical Engineering</div>
+              <p class="edu-affil">Government Engineering College Rajkot {GTU}</p>
+              <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                Studying comprehensive electrical engineering principles with an emphasis on power systems, high voltage switchgear, advanced AC machine design, and cutting-edge power electronics applied to energy systems.
+              </p>
+            </div>
+
+            <div class="edu-stats">
+              <div class="edu-stat-item">
+                <span style="color: var(--text-muted);">University</span>
+                <strong>Gujarat Technological University</strong>
+              </div>
+              <div class="edu-stat-item">
+                <span style="color: var(--text-muted);">Institution</span>
+                <strong>GEC Rajkot</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Relevant Subjects Grid -->
+          <div class="subjects-container">
+            <div class="subject-item-card">
+              <div class="subject-info">
+                <div class="subject-icon">⚡</div>
+                <div>
+                  <div class="subject-name">Power System – I</div>
+                  <div class="subject-desc">Transmission line parameters, power flow, and grid distribution</div>
+                </div>
+              </div>
+              <span class="subject-pill">Core Power</span>
+            </div>
+
+            <div class="subject-item-card">
+              <div class="subject-info">
+                <div class="subject-icon">🛡️</div>
+                <div>
+                  <div class="subject-name">Switchgear & Protection</div>
+                  <div class="subject-desc">Circuit breakers, protective relays, and substation safety schemes</div>
+                </div>
+              </div>
+              <span class="subject-pill">Protection</span>
+            </div>
+
+            <div class="subject-item-card">
+              <div class="subject-info">
+                <div class="subject-icon">🔄</div>
+                <div>
+                  <div class="subject-name">Electrical Machines – I & II</div>
+                  <div class="subject-desc">Transformers, DC machines, synchronous alternators, & induction motors</div>
+                </div>
+              </div>
+              <span class="subject-pill">Machines</span>
+            </div>
+
+            <div class="subject-item-card">
+              <div class="subject-info">
+                <div class="subject-icon">📐</div>
+                <div>
+                  <div class="subject-name">AC Machine Design</div>
+                  <div class="subject-desc">Magnetic circuits, stator/rotor winding calculations, & thermal limits</div>
+                </div>
+              </div>
+              <span class="subject-pill">Design</span>
+            </div>
+
+            <div class="subject-item-card">
+              <div class="subject-info">
+                <div class="subject-icon">🔌</div>
+                <div>
+                  <div class="subject-name">Power Electronics</div>
+                  <div class="subject-desc">Inverters, converters, PWM controllers, and EV motor drive circuits</div>
+                </div>
+              </div>
+              <span class="subject-pill">Electronics & EV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Interactive Matrix Section -->
+    <section id="skills" class="section" style="background: rgba(0, 0, 0, 0.15);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 04. Technical Arsenal</span>
+          <h2 class="section-title">Skills & Specializations</h2>
+          <p class="section-desc">Interactive overview of technical engineering competencies, digital media specialties, and core soft skills.</p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="engineering">Engineering & CNC</button>
+          <button class="filter-btn" data-filter="specialty">Creative & Media</button>
+          <button class="filter-btn" data-filter="soft">Soft Skills & Tools</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill: CNC Operations -->
+          <div class="skill-card" data-category="engineering">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-engineering">⚙️</div>
+              <span class="spec-badge">Industrial</span>
+            </div>
+            <h3 class="skill-title">CNC Machine Operations</h3>
+            <p class="skill-desc">Hands-on experience in machine setup, tooling adjustments, cycle supervision, and routine maintenance in manufacturing.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Power Systems & Grid -->
+          <div class="skill-card" data-category="engineering">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-engineering">⚡</div>
+              <span class="spec-badge">Core Electrical</span>
+            </div>
+            <h3 class="skill-title">Power Systems & Switchgear</h3>
+            <p class="skill-desc">Knowledge of electrical power transmission, substation protection schemes, circuit breakers, and fault clearing.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Electrical Machines & Design -->
+          <div class="skill-card" data-category="engineering">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-engineering">🔄</div>
+              <span class="spec-badge">Machinery</span>
+            </div>
+            <h3 class="skill-title">Electrical Machines & AC Design</h3>
+            <p class="skill-desc">Understanding of transformer operations, DC/AC motors, stator windings, torque characteristics, and thermal design constraints.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 84%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Technical Documentation & Excel -->
+          <div class="skill-card" data-category="engineering">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-engineering">📊</div>
+              <span class="spec-badge">Documentation</span>
+            </div>
+            <h3 class="skill-title">MS Excel & Technical Documentation</h3>
+            <p class="skill-desc">Preparing industrial maintenance logs, engineering specifications, data analysis, and formatted technical reports.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Video Editing -->
+          <div class="skill-card" data-category="specialty">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-specialty">🎬</div>
+              <span class="spec-badge">Creative</span>
+            </div>
+            <h3 class="skill-title">Video Editing</h3>
+            <p class="skill-desc">Creating engaging video content, cutting, pacing, color correction, and audio synchronization for digital platforms.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Graphic Design & Photo Editing -->
+          <div class="skill-card" data-category="specialty">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-specialty">🎨</div>
+              <span class="spec-badge">Design</span>
+            </div>
+            <h3 class="skill-title">Graphic Design & Photo Editing</h3>
+            <p class="skill-desc">Digital poster creation, visual asset editing, retouching, and layout composition for modern media presentations.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Problem Solving & Troubleshooting -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-soft">💡</div>
+              <span class="spec-badge">Analytical</span>
+            </div>
+            <h3 class="skill-title">Analytical Problem Solving</h3>
+            <p class="skill-desc">Diagnosing machinery glitches, finding root causes, and applying systematic troubleshooting methods under pressure.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Collaboration & Communication -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-soft">🤝</div>
+              <span class="spec-badge">Teamwork</span>
+            </div>
+            <h3 class="skill-title">Communication & Collaboration</h3>
+            <p class="skill-desc">Effective coordination with shop-floor technicians and cross-disciplinary teams in Hindi, English, and Gujarati.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Time Management & Adaptability -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-card-icon icon-soft">⏱️</div>
+              <span class="spec-badge">Productivity</span>
+            </div>
+            <h3 class="skill-title">Time Management & Creativity</h3>
+            <p class="skill-desc">Punctual execution of maintenance rounds, meeting production targets, and introducing creative digital workflows.</p>
+            <div class="skill-meter-bg">
+              <div class="skill-meter-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Interests Section: Solar, EV, Clean Energy -->
+    <section id="interests" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 05. Future Horizons</span>
+          <h2 class="section-title">Fields of Deep Interest</h2>
+          <p class="section-desc">Key technological sectors where I aspire to build long-term sustainable engineering solutions.</p>
+        </div>
+
+        <div class="interests-grid">
+          <div class="interest-card">
+            <span class="interest-badge">Renewables</span>
+            <div style="font-size: 2.25rem;">☀️</div>
+            <h3 class="interest-title">Solar Energy Systems</h3>
+            <p class="interest-desc">
+              Harnessing photovoltaic technology, solar inverter topologies, grid-tied and hybrid solar installations for industrial and residential decarbonization.
+            </p>
+          </div>
+
+          <div class="interest-card">
+            <span class="interest-badge">Clean Tech</span>
+            <div style="font-size: 2.25rem;">🌱</div>
+            <h3 class="interest-title">Renewable Energy Integration</h3>
+            <p class="interest-desc">
+              Modernizing power grids with distributed renewable energy resources, microgrids, battery energy storage systems (BESS), and smart power management.
+            </p>
+          </div>
+
+          <div class="interest-card">
+            <span class="interest-badge">Mobility</span>
+            <div style="font-size: 2.25rem;">🚗⚡</div>
+            <h3 class="interest-title">Electric Vehicle (EV) Tech</h3>
+            <p class="interest-desc">
+              Powertrain electrification, EV motor drives (BLDC/PMSM), regenerative braking, battery management systems (BMS), and EV fast charging infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" style="background: rgba(0, 0, 0, 0.15);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 06. Milestones</span>
+          <h2 class="section-title">Key Achievements</h2>
+          <p class="section-desc">Practical accomplishments demonstrating technical dedication and versatility.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start;">
+            <div style="width: 3rem; height: 3rem; border-radius: 10px; background: rgba(0, 240, 255, 0.12); color: var(--accent-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+              🏆
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">CNC Industrial Internship Completion</h3>
+              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                Successfully completed internship at a precision CNC manufacturing facility, gaining real industrial competence in machine setup, preventative maintenance, and workplace safety compliance.
+              </p>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 2rem; display: flex; gap: 1.25rem; align-items: flex-start;">
+            <div style="width: 3rem; height: 3rem; border-radius: 10px; background: rgba(168, 85, 247, 0.12); color: #c084fc; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0;">
+              🎨
+            </div>
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Creative Multimedia & Design Mastery</h3>
+              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                Self-driven mastery of video editing, graphic design, and photo manipulation, executing digital media projects alongside core engineering coursework to offer multifaceted value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 07. Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Open to entry-level electrical engineering roles, industrial trainee positions, or collaborative projects.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Left: Direct Contact Information -->
+          <div class="contact-info-list">
+            <!-- Phone -->
+            <div class="contact-card-item">
+              <div class="contact-left">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-title">Direct Phone</div>
+                  <a href="tel:+919409000682" class="contact-value" style="text-decoration: none;">+91 9409000682</a>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="+919409000682" title="Copy Phone Number">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- WhatsApp Direct -->
+            <a href="https://wa.me/919409000682?text=Hello%20Krrish,%20I%20reviewed%20your%20Electrical%20Engineering%20portfolio" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+              <div class="contact-left">
+                <div class="contact-icon-box" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-title">WhatsApp Chat</div>
+                  <div class="contact-value" style="color: var(--accent-emerald);">Quick Chat on WhatsApp</div>
+                </div>
+              </div>
+              <span style="font-size: 0.85rem; color: var(--accent-emerald);">Open ↗</span>
+            </a>
+
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="contact-left">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-title">Email Address</div>
+                  <a href="mailto:krrishmakwanad@gmail.com" class="contact-value" style="text-decoration: none;">krrishmakwanad@gmail.com</a>
+                </div>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="krrishmakwanad@gmail.com" title="Copy Email Address">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card-item">
+              <div class="contact-left">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-title">Base Location</div>
+                  <div class="contact-value">Wankaner, Morbi, Gujarat, India</div>
+                </div>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">India</span>
+            </div>
+          </div>
+
+          <!-- Contact Right: Interactive Inquiry Form -->
+          <div class="form-card">
+            <div class="recipient-banner">
+              <span style="display: flex; align-items: center; gap: 0.4rem;">
+                <span class="status-dot" style="width: 7px; height: 7px;"></span>
+                <span>Direct Delivery To:</span>
+              </span>
+              <strong>krrishmakwanad@gmail.com</strong>
+            </div>
+
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">Send a Direct Message</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.25rem;">Select a quick inquiry topic or write your custom message below:</p>
+
+            <div class="quick-templates">
+              <span class="template-pill" data-template="Hi Krrish, we have an opening for an Electrical Engineering role at our company and would like to discuss your profile.">💼 Job Opening</span>
+              <span class="template-pill" data-template="Hello Krrish, we would like to interview you for an engineering trainee / internship position in industrial manufacturing.">⚙️ Trainee Role</span>
+              <span class="template-pill" data-template="Hi Krrish, let's connect regarding a project in Solar Energy / Electric Vehicle technology.">☀️ Solar & EV Project</span>
+              <span class="template-pill" data-template="Hello Krrish, let's collaborate on creative video editing and design work.">🎬 Media Collaboration</span>
+            </div>
+
+            <form id="contact-form" action="https://formsubmit.co/krrishmakwanad@gmail.com" method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="New Portfolio Message for Makwana Krrish">
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name / Organization</label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Reliance / L&T Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg" class="form-label">Message</label>
+                <textarea id="contact-msg" name="message" class="form-control" rows="4" placeholder="Type your message or click any quick topic pill above..." required></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Direct Message to krrishmakwanad@gmail.com</span>
+              </button>
+
+              <div class="email-action-row">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=krrishmakwanad@gmail.com&su=Engineering%20Inquiry%20from%20Portfolio" target="_blank" rel="noopener noreferrer" class="email-chip-btn">
+                  <span>✉️</span> Compose in Gmail Web
+                </a>
+                <a href="mailto:krrishmakwanad@gmail.com?subject=Engineering%20Inquiry%20from%20Portfolio" class="email-chip-btn">
+                  <span>📧</span> Open in Mail App
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">
+            Makwana Krrish • Electrical Engineer
+          </div>
+          <div>B.E. Electrical Engineering | Government Engineering College Rajkot {GTU}</div>
+        </div>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <a href="#hero" style="color: var(--accent-cyan); text-decoration: none; font-weight: 600;">Back to Top ↑</a>
+          <button class="open-resume-modal" style="background: none; border: none; color: var(--text-secondary); cursor: pointer;">Print Resume</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Printable Resume Modal -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-toolbar">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span style="font-weight: 700; color: #0f172a;">📄 ATS-Friendly Resume View</span>
+          <span style="font-size: 0.75rem; background: #e2e8f0; color: #475569; padding: 2px 8px; border-radius: 4px;">Print-Ready (A4)</span>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <a href="Makwana_Krrish_Resume.pdf" download="Makwana_Krrish_Resume.pdf" class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.85rem; text-decoration: none;">
+            📥 Download .PDF
+          </a>
+          <button id="print-resume-btn" class="btn btn-primary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Print / Save as PDF
+          </button>
+          <button id="close-resume-modal" style="background: none; border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.4rem 0.8rem; cursor: pointer; color: #475569; font-weight: 600;">
+            Close ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Document Container -->
+      <div id="printable-resume-area" class="printable-resume">
+        <div class="resume-header">
+          <h1 class="resume-name">MAKWANA KRRISH</h1>
+          <div class="resume-title">ELECTRICAL ENGINEER</div>
+          <div class="resume-contact-bar">
+            <span>📍 Wankaner, Morbi, Gujarat, India</span>
+            <span>📞 +91 9409000682</span>
+            <span>✉️ krrishmakwanad@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="resume-sec">
+          <h2 class="resume-sec-title">Profile Summary</h2>
+          <p style="font-size: 0.9rem; color: #334155; line-height: 1.6;">
+            Motivated Electrical Engineering student with internship experience in a CNC company. Interested in solar energy, renewable energy, and electric vehicle technologies. Possesses strong technical, problem-solving, and teamwork skills. Fluent in Hindi, English, and Gujarati, with a willingness to learn and grow in the engineering field.
+          </p>
+        </div>
+
+        <div class="resume-sec">
+          <h2 class="resume-sec-title">Experience</h2>
+          <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem; color: #0f172a; margin-bottom: 0.35rem;">
+            <span>Electrical Engineering Intern</span>
+            <span>CNC Manufacturing Company</span>
+          </div>
+          <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 0.75rem;">Practical Industrial Exposure & Shop-Floor Training</div>
+          <ul class="resume-bullet-list">
+            <li>Gained hands-on experience in CNC machine operations and manufacturing processes.</li>
+            <li>Assisted in machine setup, operation, and routine maintenance activities.</li>
+            <li>Learned industrial safety standards and workplace procedures.</li>
+            <li>Observed production planning and quality control processes.</li>
+            <li>Supported troubleshooting and basic technical tasks in the production environment.</li>
+            <li>Developed problem-solving and analytical skills through practical exposure.</li>
+            <li>Worked effectively with technicians and team members to achieve production targets.</li>
+          </ul>
+        </div>
+
+        <div class="resume-sec">
+          <h2 class="resume-sec-title">Education</h2>
+          <div style="font-weight: 700; font-size: 0.95rem; color: #0f172a;">
+            Bachelor of Engineering (B.E.) – Electrical Engineering
+          </div>
+          <div style="font-size: 0.875rem; color: #475569;">
+            Government Engineering College Rajkot {GTU}
+          </div>
+        </div>
+
+        <div class="resume-sec">
+          <h2 class="resume-sec-title">Relevant Subjects</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem 1.5rem; font-size: 0.875rem; color: #334155;">
+            <div>• Power System – I</div>
+            <div>• Electrical Machines – II</div>
+            <div>• Switchgear & Protection</div>
+            <div>• AC Machine Design</div>
+            <div>• Electrical Machines – I</div>
+            <div>• Power Electronics</div>
+          </div>
+        </div>
+
+        <div class="resume-sec">
+          <h2 class="resume-sec-title">Skills & Competencies</h2>
+          <div style="margin-bottom: 0.5rem; font-size: 0.875rem;">
+            <strong>Engineering Skills:</strong> CNC Machine Operations, MS Excel, Technical Documentation, Circuit Troubleshooting
+          </div>
+          <div style="margin-bottom: 0.5rem; font-size: 0.875rem;">
+            <strong>Specialties & Media:</strong> Video Editing, Graphic Design, Photo Editing, Digital Content Creation
+          </div>
+          <div style="margin-bottom: 0.5rem; font-size: 0.875rem;">
+            <strong>Soft Skills:</strong> Communication, Time Management, Creativity, Collaboration, Teamwork
+          </div>
+          <div style="font-size: 0.875rem;">
+            <strong>Languages Known:</strong> English, Hindi, Gujarati
+          </div>
+        </div>
+
+        <div class="resume-sec" style="margin-bottom: 0;">
+          <h2 class="resume-sec-title">Achievements</h2>
+          <ul class="resume-bullet-list">
+            <li>Completed internship at a CNC manufacturing company, gaining practical industrial experience.</li>
+            <li>Developed skills in CNC operations, video editing, graphic design, and digital content creation through hands-on projects and continuous learning.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
